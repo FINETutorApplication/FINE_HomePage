@@ -17,15 +17,18 @@
 .header {
   background: linear-gradient(
     107.37deg,
-    rgba(243, 252, 255, 1) 0%,
-    rgba(215, 252, 255, 1) 46.29819393157959%,
-    rgba(160, 255, 255, 1) 89.9240255355835%
+    rgba(243, 252, 255, 0.7) 0%, /* Reduce opacity */
+    rgba(215, 252, 255, 0.7) 46.3%,
+    rgba(160, 255, 255, 0.7) 89.9%
   );
   height: 120px;
   position: fixed;
   inset: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.01);
+  transform-origin: 0 0;
+  backdrop-filter: blur(10px); /* Applies blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 .header-items {
@@ -145,7 +148,7 @@
   right: 83.44%;
   left: 7.4%;
   bottom: 90.28%;
-  top: 5.52%;
+  top: 67px;
   z-index: 1000;
 }
 ._1-2 {
