@@ -1,0 +1,349 @@
+.home-page-1,
+.home-page-1 * {
+  box-sizing: border-box;
+}
+.home-page-1 {
+  background: linear-gradient(
+    107.37deg,
+    rgba(243, 252, 255, 1) 0%,
+    rgba(215, 252, 255, 1) 46.29819393157959%,
+    rgba(160, 255, 255, 1) 89.9240255355835%
+  );
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(
+    107.37deg,
+    rgba(243, 252, 255, 1) 0%,
+    rgba(215, 252, 255, 1) 46.29819393157959%,
+    rgba(160, 255, 255, 1) 89.9240255355835%
+  );
+  height: 120px;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.01);
+}
+
+.header-items {
+  width: 1113px;
+  height: 14px;
+  position: absolute;
+  left: 625px;
+  top: 60px;
+}
+
+.header-search-icon {
+  width: 134px;
+  height: 75px;
+  position: absolute;
+  left: 1020px;
+  top: -28px;
+  object-fit: cover;
+  aspect-ratio: 134/75;
+}
+.home-item {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  position: absolute;
+  right: 90.57%;
+  left: 0%;
+  width: 9.43%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.find-tutor-item {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  position: absolute;
+  right: 38.9%;
+  left: 49.51%;
+  width: 11.59%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.become-tutot-item {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.07em;
+  font-weight: 400;
+  position: absolute;
+  right: 50.58%;
+  left: 27.22%;
+  width: 22.19%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.about-item {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.07em;
+  font-weight: 400;
+  position: absolute;
+  right: 67.57%;
+  left: 10.24%;
+  width: 22.19%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.contact-item {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.07em;
+  font-weight: 400;
+  position: absolute;
+  right: 12.49%;
+  left: 65.32%;
+  width: 22.19%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.header-scholarship-item {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.07em;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 77.81%;
+  width: 22.19%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 9.17%;
+  height: 3.7%;
+  position: fixed;
+  right: 83.44%;
+  left: 7.4%;
+  bottom: 90.28%;
+  top: 5.52%;
+  z-index: 1000;
+}
+._1-2 {
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.fine-platform {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: relative;
+  width: 298px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fine-platform-span {
+  color: #000000;
+  font-family: "Rubik-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+.fine-platform-span2 {
+  color: #46cae0;
+  font-family: "Rubik-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+.fine-platform-span3 {
+  color: #000000;
+  font-family: "Rubik-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.circle-des-2 {
+  background: linear-gradient(
+    235.09deg,
+    rgba(164, 249, 255, 1) 0%,
+    rgba(56, 204, 246, 1) 100%
+  );
+  border-radius: 50%;
+  width: 112px;
+  height: 112px;
+  position: absolute;
+  left: 694.07px;
+  top: 502.79px;
+  transform-origin: 0 0;
+  transform: rotate(-101.414deg) scale(1, 1);
+  filter: blur(1000);
+}
+
+.quote-1 {
+  text-align: left;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -0.1px;
+  font-weight: 800;
+  position: absolute;
+  left: 142px;
+  top: 200px;
+  width: 758px;
+  height: 275px;
+}
+.quote-1-span {
+  color: #000000;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -0.1px;
+  font-weight: 800;
+}
+.quote-1-span2 {
+  color: #22c6f4;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  margin-left: 30px;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+
+.quote-2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  position: absolute;
+  left: 142px;
+  top: 500px;
+  width: 800px;
+  height: 142px;
+}
+
+.circle-des-3 {
+  background: linear-gradient(
+    268.66deg,
+    rgba(20, 193, 242, 1) 0.6880429107695818%,
+    rgba(152, 233, 255, 1) 100%
+  );
+  border-radius: 50%;
+  width: 260px;
+  height: 254px;
+  position: absolute;
+  left: 280.2px;
+  top: 1021.72px;
+  transform-origin: 0 0;
+  transform: rotate(126.077deg) scale(1, 1);
+  filter: blur(15px);
+}
+
+.circle-des-1 {
+  background: linear-gradient(
+    235.09deg,
+    rgba(148, 242, 254, 1) 0%,
+    rgba(13, 168, 224, 1) 100%
+  );
+  border-radius: 50%;
+  width: 22.99px;
+  height: 22.99px;
+  position: absolute;
+  left: 1196.7px;
+  top: 408px;
+  transform-origin: 0 0;
+  transform: rotate(19.262deg) scale(-1, 1);
+}
+
+.line-des-1 {
+  width: 1920px;
+  height: 877px;
+  position: absolute;
+  left: 0px;
+  top: 199px;
+  overflow: visible;
+}
+
+.hero-image-1 {
+  width: 1392px;
+  height: 783px;
+  position: absolute;
+  left: 788px;
+  top: 200px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.tutor-register-button {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 159, 238, 1) 0%,
+    rgba(34, 207, 255, 1) 100%
+  );
+  border-radius: 50px;
+  width: 345px;
+  height: 62px;
+  position: absolute;
+  left: 446px;
+  top: 730px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  border-width: 0px;
+}
+
+.order-tutor-button{
+  background: linear-gradient(
+    90deg,
+    rgba(0, 159, 238, 1) 0%,
+    rgba(34, 207, 255, 1) 100%
+  );
+  border-radius: 50px;
+  width: 287px;
+  height: 62px;
+  position: absolute;
+  left: 142px;
+  top: 730px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  border-width: 0px;
+}
+
+
+
+
+
+
+
