@@ -1,4 +1,4 @@
-import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Move } from "react-scroll-motion";
+import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Move, FadeOut } from "react-scroll-motion";
 import HeroPic1 from "../../../Assets/images/Frame1_Heropic.png";
 import searchIcon from "../../../Assets/SVGs/Search_Icon.svg";
 import lineDes from "../../../Assets/SVGs/line_des.svg";
@@ -8,7 +8,7 @@ import "./style.css";
 
 const HeroPage1 = () => {
     return (
-    <ScrollPage page={0}>
+    <ScrollPage page={0} animation={batch(FadeIn(0, 200), FadeOut(0, 200))}>
         <div class="home-page-1">
             <div class="header">
                 <div class="header-items">
@@ -34,29 +34,37 @@ const HeroPage1 = () => {
                 </a>
             </div>
             <div class="circle-des-2"></div>
-            <div class="quote-1">
-                <span>
-                    <span class="quote-1-span">Ignite Learning, Inspire Change with</span>
-                    <span class="quote-1-span2">FINE</span>
-                </span>
-            </div>
-            <div class="quote-2">
-                Nền tảng kết nối học sinh với hàng nghìn gia sư chất lượng.
-                <br /><br />
-                Học online hoặc trực tiếp một cách linh hoạt.
-            </div>
+            <Animator animation={batch(MoveOut(0,-500)) }>
+                <div class="quote-1">
+                    <span>
+                        <span class="quote-1-span">Ignite Learning, Inspire Change with</span>
+                        <span class="quote-1-span2">FINE</span>
+                    </span>
+                </div>
+            </Animator>
+            <Animator animation={batch(MoveOut(0,-700)) }>
+                <div class="quote-2">
+                    Nền tảng kết nối học sinh với hàng nghìn gia sư chất lượng.
+                    <br /><br />
+                    Học online hoặc trực tiếp một cách linh hoạt.
+                </div>
+            </Animator>
             <div class="circle-des-3"></div>
             <div class="circle-des-1"></div>
             <img class="line-des-1" src={lineDes}/>
-            <img class="hero-image-1" src={HeroPic1} />
-
-            <button class="tutor-register-button" onClick={() => window.open("#", "_blank")}>
-                ĐĂNG KÍ LÀM GIA SƯ
-            </button>
-            <button class="order-tutor-button" onClick={() => window.open("#", "_blank")}>
-                ĐẶT GIA SƯ
-            </button>
-            
+            <Animator animation={batch(MoveOut(0,-300)) }>
+                <img class="hero-image-1" src={HeroPic1} />
+            </Animator>
+            <Animator animation={batch(MoveOut(0,-600)) }>
+                <button class="tutor-register-button" onClick={() => window.open("#", "_blank")}>
+                    ĐĂNG KÍ LÀM GIA SƯ
+                </button>
+            </Animator>
+            <Animator animation={batch(MoveOut(0,-500)) }>
+                <button class="order-tutor-button" onClick={() => window.open("#", "_blank")}>
+                    ĐẶT GIA SƯ
+                </button>
+            </Animator>
         </div>
     </ScrollPage>
     );

@@ -43,7 +43,10 @@ const BestTutorsPage = () => {
                 <div class="des-3"></div>
                 <div class="des-6"></div>
                 <div class="des-5"></div>
-                <div className="title-best-tutor">Our Best Tutors</div>
+                <Animator animation={batch(MoveIn(0,300),MoveOut(0,-300)) }>
+                    <div className="title-best-tutor">Our Best Tutors</div>
+                </Animator>
+                <Animator animation={batch(MoveIn(0,600),MoveOut(1000,-500)) }>
                 <div className="listbest-tutors" ref={scrollRef}>
                     {[...bestTutors, ...bestTutors].map((tutor, index) => (
                         <div key={index} className="tutor-card">
@@ -58,6 +61,7 @@ const BestTutorsPage = () => {
                         </div>
                     ))}
                 </div>
+                </Animator>
                 <div class="des-4"></div>
             </div>
         </ScrollPage>

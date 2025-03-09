@@ -231,6 +231,7 @@
 }
 .quote-1-span2 {
   color: #22c6f4;
+  -webkit-text-stroke: 1px white;
   font-family: "Inter-ExtraBold", sans-serif;
   font-size: 80px;
   line-height: 90px;
