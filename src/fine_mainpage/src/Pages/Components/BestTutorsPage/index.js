@@ -43,16 +43,18 @@ const BestTutorsPage = () => {
                 <div class="des-3"></div>
                 <div class="des-6"></div>
                 <div class="des-5"></div>
-                <div className="title-best-tutor">Best Tutors</div>
+                <div className="title-best-tutor">Our Best Tutors</div>
                 <div className="listbest-tutors" ref={scrollRef}>
                     {[...bestTutors, ...bestTutors].map((tutor, index) => (
                         <div key={index} className="tutor-card">
                             <img className="tutor-image" src={tutor.imageSrc} />
+                            <div class="tutor-details">
                             <div className="tutor-name">{tutor.name}</div>
                             <div className="tutor-subject">{tutor.subject}</div>
                             <a href={tutor.link_quick_book} target="_blank" rel="noreferrer" className="book-button">
                                 Đặt lịch ngay
                             </a>
+                            </div>
                         </div>
                     ))}
                 </div>
