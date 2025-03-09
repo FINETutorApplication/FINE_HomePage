@@ -1,6 +1,7 @@
 import Image1 from "../../../Assets/FindTutorPage/SVGs/image1.svg";
 import lineDes from "../../../Assets/FindTutorPage/SVGs/des1.svg";
 import rocket from "../../../Assets/FindTutorPage/rocket.png";
+import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Move } from "react-scroll-motion";
 import React, { useEffect, useRef } from "react";
 import "./style.css";
 
@@ -35,27 +36,29 @@ const BestTutorsPage = () => {
     }, []);
 
     return (
-        <div class="frame-4">
-            <div class="des-2"></div>
-            <div class="des-1"></div>
-            <div class="des-3"></div>
-            <div class="des-6"></div>
-            <div class="des-5"></div>
-            <div className="title-best-tutor">Best Tutors</div>
-            <div className="listbest-tutors" ref={scrollRef}>
-                {[...bestTutors, ...bestTutors].map((tutor, index) => (
-                    <div key={index} className="tutor-card">
-                        <img className="tutor-image" src={tutor.imageSrc} />
-                        <div className="tutor-name">{tutor.name}</div>
-                        <div className="tutor-subject">{tutor.subject}</div>
-                        <a href={tutor.link_quick_book} target="_blank" rel="noreferrer" className="book-button">
-                            Đặt lịch ngay
-                        </a>
-                    </div>
-                ))}
+        <ScrollPage page={2}>
+            <div class="frame-4">
+                <div class="des-2"></div>
+                <div class="des-1"></div>
+                <div class="des-3"></div>
+                <div class="des-6"></div>
+                <div class="des-5"></div>
+                <div className="title-best-tutor">Best Tutors</div>
+                <div className="listbest-tutors" ref={scrollRef}>
+                    {[...bestTutors, ...bestTutors].map((tutor, index) => (
+                        <div key={index} className="tutor-card">
+                            <img className="tutor-image" src={tutor.imageSrc} />
+                            <div className="tutor-name">{tutor.name}</div>
+                            <div className="tutor-subject">{tutor.subject}</div>
+                            <a href={tutor.link_quick_book} target="_blank" rel="noreferrer" className="book-button">
+                                Đặt lịch ngay
+                            </a>
+                        </div>
+                    ))}
+                </div>
+                <div class="des-4"></div>
             </div>
-            <div class="des-4"></div>
-        </div>
+        </ScrollPage>
     );
 };
 

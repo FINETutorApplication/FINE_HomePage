@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Move } from "react-scroll-motion";
 import HeroPage1 from '../Components/HeroPage1';
 import FindTutorPage from '../Components/FindTuTorPage';
 import BestTutorsPage from '../Components/BestTutorsPage';
@@ -19,17 +19,9 @@ const Home = () => {
 
     return (
         <ScrollContainer>
-            <ScrollPage page={0}>
-                <HeroPage1 />
-            </ScrollPage>
-
-            <ScrollPage page={1}>
-                <FindTutorPage />
-            </ScrollPage>
-
-            <ScrollPage page={2}>
-                <BestTutorsPage />
-            </ScrollPage>
+            <HeroPage1 />
+            <FindTutorPage />
+            <BestTutorsPage />
         </ScrollContainer>
     );
 }
