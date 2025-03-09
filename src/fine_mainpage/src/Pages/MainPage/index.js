@@ -2,6 +2,7 @@ import React from "react";
 import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import HeroPage1 from '../Components/HeroPage1';
 import FindTutorPage from '../Components/FindTuTorPage';
+import BestTutorsPage from '../Components/BestTutorsPage';
 import "./style.css";
 
 const Home = () => {
@@ -24,6 +25,10 @@ const Home = () => {
 
             <ScrollPage page={1}>
                 <FindTutorPage />
+            </ScrollPage>
+
+            <ScrollPage page={2}>
+                <BestTutorsPage />
             </ScrollPage>
         </ScrollContainer>
     );

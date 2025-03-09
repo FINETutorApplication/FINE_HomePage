@@ -1,0 +1,186 @@
+.frame-4,
+.frame-4 * {
+  box-sizing: border-box;
+}
+.frame-4 {
+  background: #ffffff;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* Ensure it is above backgrounds */
+}
+
+.title-best-tutor {
+  position: relative;
+  margin-top: 180px;
+  margin-left: 142px;
+  font-size: 80px;
+  font-weight: bold;
+  inset: 0;
+  z-index: 1;
+  z-index: 10;
+  color: #007c92;
+}
+
+.listbest-tutors {
+  margin-top: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  inset: 0;
+  position: relative; 
+  z-index: 10;
+}
+
+.listbest-tutors::-webkit-scrollbar {
+  display: none;
+}
+
+.tutor-card {
+  flex: 0 0 auto;
+  height: 500px;
+  width: 350px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px; 
+  padding: 20px;
+  text-align: center;
+  opacity: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tutor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tutor-image {
+  top: 0px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.tutor-details {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.tutor-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.tutor-subject {
+  font-size: 14px;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 8px 15px;
+  background: white;
+  color: #007bff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.book-button:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.des-6,
+.des-5,
+.des-4,
+.des-3,
+.des-2,
+.des-1 {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.des-5 {
+  background: #80fcfc;
+  width: 340.83px;
+  height: 349.26px;
+  left: 900.98px;
+  top: 1044.67px;
+  transform: rotate(126.077deg) scale(1, 1);
+  filter: blur(200px);
+}
+
+.des-6 {
+  background: rgba(179, 255, 255, 0.69);
+  transform: rotate(126.077deg) scale(1, 1);
+  filter: blur(100px);
+  width: 1336.56px;
+  height: 1346.23px;
+  left: 420.12px;
+  top: 4.24px;
+}
+
+.des-1 {
+  background: rgba(179, 255, 255, 0.53);
+  width: 855.72px;
+  height: 823.55px;
+  left: 2270.62px;
+  top: 484.97px;
+  transform: rotate(126.077deg) scale(1, 1);
+  filter: blur(200px);
+}
+
+.des-4,
+.des-3,
+.des-2 {
+  background: linear-gradient(
+    235.09deg,
+    rgba(164, 249, 255, 1) 0%,
+    rgba(56, 204, 246, 1) 100%
+  );
+  width: 435.59px;
+  height: 435.59px;
+  transform: rotate(111.043deg) scale(1, 1);
+  filter: blur(2.5px);
+}
+
+.des-4 {
+  left: 1403.42px;
+  top: 855.59px;
+}
+
+.des-3 {
+  left: 389.94px;
+  top: 42.41px;
+}
+
+.des-2 {
+  left: 2201.94px;
+  top: -64.59px;
+}
+
+
+
