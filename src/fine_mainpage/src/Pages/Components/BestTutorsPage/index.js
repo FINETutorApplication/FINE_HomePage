@@ -37,7 +37,7 @@ const BestTutorsPage = () => {
 
     return (
         <ScrollPage page={2}>
-            <div class="frame-4">
+            <div class="frame-4" id="about">
                 <div class="des-2"></div>
                 <div class="des-1"></div>
                 <div class="des-3"></div>
@@ -46,7 +46,7 @@ const BestTutorsPage = () => {
                 <Animator animation={batch(MoveIn(0,300),MoveOut(0,-300)) }>
                     <div className="title-best-tutor">Our Best Tutors</div>
                 </Animator>
-                <Animator animation={batch(MoveIn(0,600),MoveOut(1000,-500)) }>
+                <Animator animation={batch(MoveIn(0,600),MoveOut(0,-500)) }>
                 <div className="listbest-tutors" ref={scrollRef}>
                     {[...bestTutors, ...bestTutors].map((tutor, index) => (
                         <div key={index} className="tutor-card">

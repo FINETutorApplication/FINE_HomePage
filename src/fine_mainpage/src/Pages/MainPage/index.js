@@ -3,6 +3,7 @@ import { ScrollContainer, ScrollPage, Animator, batch, Fade, FadeIn, MoveIn, Mov
 import HeroPage1 from '../Components/HeroPage1';
 import FindTutorPage from '../Components/FindTuTorPage';
 import BestTutorsPage from '../Components/BestTutorsPage';
+import AboutPage from '../Components/AboutPage';
 import "./style.css";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
             <HeroPage1 />
             <FindTutorPage />
             <BestTutorsPage />
+            <AboutPage />
         </ScrollContainer>
     );
 }
